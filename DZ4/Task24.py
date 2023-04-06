@@ -13,10 +13,9 @@ berries_list = []
 for i in range(bushes_num):
     berries_list.append(int(input(f"Enter the number of berries on {i+1} bush: ")))
 print(berries_list)
-berries_list.append(berries_list[0])
-max_harvest = 0
-current_harvest = berries_list[0] + berries_list[-1] + berries_list[1]
-for i in range(1, len(berries_list)-1):
+max_harvest = berries_list[-2] + berries_list[-1] + berries_list[0]
+current_harvest = 0
+for i in range(len(berries_list)-1):
     current_harvest = berries_list[i] + berries_list[i+1] + berries_list[i-1]
     if current_harvest > max_harvest:
         max_harvest = current_harvest
