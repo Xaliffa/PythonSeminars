@@ -6,7 +6,7 @@
 def arithm_progression(start_elem, step, amount_elems):
     ar_progression = []
     for i in range(1, amount_elems + 1):
-        ar_progression.append(start_elem + (i-1)*step)
+        ar_progression.append(start_elem + (i - 1) * step)
     return ar_progression
 
 print(arithm_progression(7, 2, 5))
