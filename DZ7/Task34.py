@@ -8,9 +8,7 @@
 # в порядке
 
 
-
 poem_text = ('пара-ра-рам рам-пам-папам па-ра-па-дам')
 vowels_set = set(map(lambda x: x.count('а'), poem_text.split()))
     
 print('Парам пам-пам' if len(vowels_set) <=1 else 'Пам парам')
-    
